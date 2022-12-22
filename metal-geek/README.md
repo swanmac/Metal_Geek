@@ -41,13 +41,13 @@ Stretch goals for this project may be React Native to create a mobile responsive
 (https://www.figma.com/file/30MeMJhZlMiJsdrghEy6q5/ERD?node-id=0%3A1&t=U33VZoPjI7scWDMT-0)
 
 - Trello Board
-
+(https://trello.com/b/KPZIYybi/project-4)
 
 - WireFrame
-(https://wireframe.cc/pro/edit/615395)
+(https://wireframe.cc/zBtO8h)
 (https://wireframe.cc/dCIuGo)
-(https://wireframe.cc/pro/edit/615395)
-(https://wireframe.cc/pro/edit/615395)
+(https://wireframe.cc/v4uOcy)
+(https://wireframe.cc/5OLgcc)
 
 <img src="public/a1.png" alt="Wireframe1">
 <img src="public/a2.png" alt="Wireframe2">
