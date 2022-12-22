@@ -6,7 +6,7 @@ This website was designed to allow all new and seasoned guitarists learn about t
 
 This, of course, includes a listing of all of their gear from guitars and pickups, to effect pedals and amplifiers. 
 
-We even go into detail about the configuration setup that is involved as well as any special tuning.
+We even go into detail about the configuration setup that is involved as well as any special guitar string tuning.
 
 We realize that is all about getting that tone and matching that sound. There are so many factors involved, not counting the individual technique, but matching up to the guitar rig is a great start.
 
@@ -15,6 +15,16 @@ Our plan is to provide simple navigation from our list of top lead guitar player
 This project is a full stack application, meaning we will have a front end (React) visible website and it will use a backend database (Django) to supply data for the front end website.
 
 We may include the backend on this repository, but we have not decided at this stage of development.
+
+We are starting with three models, however we may add additional models depending how the project evolves.
+
+The information for the database is being extracted and recreated from a now defuncted website through the use of an online tool that permits viewing of previous versions of websites.
+
+### Models
+
+- Artist
+- Artist Rig
+- Rig Details
 
 
 ### Technology Used
