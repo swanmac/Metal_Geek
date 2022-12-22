@@ -50,3 +50,6 @@ Stretch goals for this project may be React Native to create a mobile responsive
 (https://wireframe.cc/pro/edit/615395)
 
 <img src="public/a1.png" alt="Wireframe1">
+<img src="public/a2.png" alt="Wireframe2">
+<img src="public/a3.png" alt="Wireframe3">
+<img src="public/a4.png" alt="Wireframe4">
