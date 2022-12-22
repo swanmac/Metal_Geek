@@ -44,12 +44,19 @@ Stretch goals for this project may be React Native to create a mobile responsive
 (https://trello.com/b/KPZIYybi/project-4)
 
 - WireFrame
-(https://wireframe.cc/zBtO8h)
-(https://wireframe.cc/dCIuGo)
-(https://wireframe.cc/v4uOcy)
-(https://wireframe.cc/5OLgcc)
+- Home (https://wireframe.cc/zBtO8h)
+- Artist (https://wireframe.cc/dCIuGo)
+- Artist Rig https://wireframe.cc/v4uOcy)
+- Rig Details (https://wireframe.cc/5OLgcc)
 
+## Home
 <img src="public/a1.png" alt="Wireframe1">
+
+## Artist
 <img src="public/a2.png" alt="Wireframe2">
+
+## Artist Rig
 <img src="public/a3.png" alt="Wireframe3">
+
+## Rig Details
 <img src="public/a4.png" alt="Wireframe4">
