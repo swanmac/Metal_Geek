@@ -2,7 +2,7 @@
 
 ## A Project by Greg Swan
 
-This website was designed to let all of the new and seasoned guitarist learn about the actual guitar rigs that their favorite guitarists are using. 
+This website was designed to allow all new and seasoned guitarists learn about the actual guitar rigs that their favorite guitarists are using. 
 
 This, of course, includes a listing of all of their gear from guitars and pickups, to effect pedals and amplifiers. 
 
