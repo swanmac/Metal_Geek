@@ -38,11 +38,11 @@ The information for the database is being extracted and recreated from a now def
 - React Spring
 - React-carousel-card-3d
 
-## Technology Not Used in Class
+### Technology Not Used in Class
 
 - React Native
 
-## Challenges
+### Challenges
 
 - Adding Full CRUD
 
