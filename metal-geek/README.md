@@ -38,9 +38,17 @@ The information for the database is being extracted and recreated from a now def
 - React Spring
 - React-carousel-card-3d
 
+## Technology Not Used in Class
+
+- React Native
+
+## Challenges
+
+- Adding Full CRUD
+
 ### Stretch Goals
 
-Stretch goals for this project may be React Native to create a mobile responsive website. Another stretch goal might be to add a musical instrument database tied into the Artist Rig model.
+Stretch goals for this project may be to add a musical instrument database tied into the Artist Rig model.
 
 ### Project Links
 
