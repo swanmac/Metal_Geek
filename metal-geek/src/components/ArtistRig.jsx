@@ -4,16 +4,16 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 export default function ArtistRig () {
-    let { id } = useParams()
-    console.log(id)
+    // let { id } = useParams()
+    // console.log(id)
     const navigate = useNavigate();
-    const [artistRig, setartistRig] = useState('')
+    const [artistRig, setArtistRig] = useState([])
 
     const getData = async () => {
         await axios.get(`http://localhost:8000/artist-rig`)
         .then(res => {
             if (res) {
-                setartistRig(res.data)
+                setArtistRig(res.data)
                 console.log(res.data)
             }
         })
@@ -35,7 +35,7 @@ return !artistRig? null: (
         <div className="artistRig">
             {artistRig.map((value) => {
                 return (
-            <div className="artist-rig" key={value.id} onClick={()=>goToArtistRig(artistRig)}>
+            <div className="artist-rig" key={value.id} onClick={()=>goToArtistRig(value)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
                     <h2><b>Guitarist Name:</b> {value.name}</h2>

@@ -8,6 +8,11 @@ export default function ArtistDetails () {
     let { id } = useParams()
     console.log(id)
     const navigate = useNavigate();
+
+    const goToArtist=(x)=>{
+        navigate(`/artists/${x.id}`)
+    }
+    
     const [artist, setartist] = useState('')
 
     const getData = async () => {
@@ -24,9 +29,6 @@ export default function ArtistDetails () {
         getData()
     }, [])
 
-const goToArtist=(x)=>{
-    navigate(`/artists/${x.id}`)
-}
 
 return !artist? null: (
     <div>

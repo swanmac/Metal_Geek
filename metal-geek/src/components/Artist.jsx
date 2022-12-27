@@ -1,9 +1,18 @@
-import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useParams } from "react-router-dom"
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Artist () {
+
+    let { id } = useParams()
+
     let navigate = useNavigate()
+
+    const goToArtist =(id)=>{
+        navigate(`/artists/${id}`)
+    }
+
     const [artists, setArtists] = useState([])
  
         const getData = async () => {
@@ -20,9 +29,7 @@ export default function Artist () {
         getData()
     }, [])
 
-        const goToArtist =(x)=>{
-        navigate(`${x.id}`)
-    }
+
 
         return !artists? null: (
         <div className="artists">
