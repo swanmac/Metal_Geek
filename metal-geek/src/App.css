@@ -46,6 +46,13 @@
   padding-right: 70px;
 }
 
+.crud-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: space-around;
+}
 
 .App-link {
   color: #61dafb;

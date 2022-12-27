@@ -2,6 +2,8 @@ import axios from 'axios'
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import DeleteBtn from "./DeleteBtn.jsx"
+import { Link } from "react-router-dom";
 
 export default function Artist () {
 
@@ -10,7 +12,7 @@ export default function Artist () {
     let navigate = useNavigate()
 
     const goToArtist =(id)=>{
-        navigate(`/artists/${id}`)
+        navigate(`/artistDetails/${id}`)
     }
 
     const [artists, setArtists] = useState([])
@@ -43,7 +45,15 @@ export default function Artist () {
                         <p><b>Website:</b> {value.website}</p>
                        
                         <br />
+                        <div className="crud-buttons">
+                        <DeleteBtn></DeleteBtn>{" "}
+                        <Link to='/CreateArtist'><button class="crud">Create Artist</button></Link>
+                       <Link to='/EditArtist'><button class="crud">Update Artist</button></Link>
+                        </div>   
+                    
+                    
                     </div>
+                    
                 )
             })}
 
