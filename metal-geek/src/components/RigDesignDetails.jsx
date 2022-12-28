@@ -9,8 +9,8 @@ export default function RigDesignDetails () {
     console.log(id)
     const navigate = useNavigate();
 
-    const goToRigDesignDetails=(x)=>{
-        navigate(`/rig-details/${x.id}`)
+    const goToRigDesignDetails=()=>{
+        navigate(`/artist/`)
     }
 
     // const [artist, setArtist] = useState('')

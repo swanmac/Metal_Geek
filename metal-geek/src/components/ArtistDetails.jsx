@@ -12,7 +12,7 @@ export default function ArtistDetails () {
     const navigate = useNavigate();
 
     const goToArtist=(x)=>{
-        navigate(`/artists/${x.id}`)
+        navigate(`/artistDetails/${x.id}`)
     }
     
     const [artist, setartist] = useState('')
