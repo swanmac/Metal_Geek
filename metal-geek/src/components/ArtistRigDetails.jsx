@@ -8,7 +8,12 @@ export default function ArtistRigDetails () {
     let { id } = useParams()
     console.log(id)
     const navigate = useNavigate();
-    const [artist, setArtist] = useState('')
+
+    const goToArtistRig=(x)=>{
+        navigate(`/rig-details/${x.id}`)
+    }
+
+    // const [artist, setArtist] = useState('')
     const [artistRig, setArtistRig] = useState('')
 
     const getData = async () => {
@@ -26,32 +31,29 @@ export default function ArtistRigDetails () {
     }, [])
 
 
-    const goToRigDetails=(x)=>{
-        navigate(`/rig-details/${x.id}`)
-    }
+   
 
 return !artistRig? null: (
-    
+    <div>
     <div className="artist-rig-wrapper">
 
-        {/* <div className="artist-rig-header"> */}      
-        <div className="artistRig">
-            {artistRig.map((value) => {
-                return (
-            <div className="artist-rig" key={value.id} onClick={()=>goToRigDetails(value)}>
+    <div className="artists-rig-header">
+        </div>
+            
+            <div className="artist-rig-details" key={artistRig.id} onClick={()=>goToArtistRig(artistRig)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
-                    <h2><b>Guitarist Name:</b> {value.name}</h2>
-                    <p><b>Guitar:</b> {value.guitar}</p>
-                    <p><b>Pedal 1:</b> {value.pedal1}</p>             
-                    <p><b>Pedal 2:</b> {value.pedal2}</p>
-                    <p><b>Pedal 3:</b> {value.pedal3}</p>      
-                    <p><b>Amplfier:</b> {value.amplifier}</p>
-                    <p><b>Year of Rig:</b> {value.rig_year}</p>
-                    <img src={value.photo_url}></img>
+                    <h2><b>Guitarist Name:</b> {artistRig.name}</h2>
+                    <p><b>Guitar:</b> {artistRig.guitar}</p>
+                    <p><b>Pedal 1:</b> {artistRig.pedal1}</p>             
+                    <p><b>Pedal 2:</b> {artistRig.pedal2}</p>
+                    <p><b>Pedal 3:</b> {artistRig.pedal3}</p>      
+                    <p><b>Amplfier:</b> {artistRig.amplifier}</p>
+                    <p><b>Year of Rig:</b> {artistRig.rig_year}</p>
+                    <img src={artistRig.photo_url}></img>
             </div>
-                )
-             } )}
+                
+             
     </div>
     </div>
                 

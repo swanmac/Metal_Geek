@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react"
 import { Button, Label, TextInput, ToggleSwitch } from 'flowbite-react'
 import { DataContext } from "../DataContext"
+import Artist from './Artist'
 
 export default function ArtistForm() {
 
