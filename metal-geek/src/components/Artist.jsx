@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import DeleteBtn from "./DeleteBtn.jsx"
 import { Link } from "react-router-dom";
+import ArtistDetails from './ArtistDetails.jsx'
+
 
 export default function Artist () {
 
@@ -11,8 +13,8 @@ export default function Artist () {
 
     let navigate = useNavigate()
 
-    const goToArtist =(id)=>{
-        navigate(`/artistDetails/${id}`)
+    const goToArtist =(x)=>{
+        navigate(`/artistDetails/${x.id}`)
     }
 
     const [artists, setArtists] = useState([])
@@ -43,6 +45,10 @@ export default function Artist () {
                         <p>{value.bio}</p>
                         <p><b>Bands:</b> {value.band}</p>
                         <p><b>Website:</b> {value.website}</p>
+
+                        <br />
+                        
+
                        
                         <br />
                         <div className="crud-buttons">
