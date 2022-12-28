@@ -24,7 +24,7 @@ export default function ArtistRig () {
     }, [])
 
 const goToArtistRig=(x)=>{
-    navigate(`/artist-rig/${x.id}`)
+    navigate(`/artistRigDetails/${x.id}`)
 }
 
 return !artistRig? null: (
