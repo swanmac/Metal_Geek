@@ -24,7 +24,7 @@ export default function RigDetails () {
     }, [])
 
 const goToRigDetails=(x)=>{
-    navigate(`/rig-details/${x.id}`)
+    navigate(`/rigDesignDetails/${x.id}`)
 }
 
 return !rigDetails? null: (
