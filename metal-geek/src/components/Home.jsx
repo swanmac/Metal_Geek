@@ -37,18 +37,18 @@ export default function Home (props) {
               },
               {
                 key: 2,
-                content: <CarouselCard title="Town Star" image={Carousel2} />,
+                content: <CarouselCard title="Iron Maiden" image={Carousel2} />,
               },
               {
                 key: 3,
                 content: (
-                  <CarouselCard title="Defense Heroes" image={Carousel3} />
+                  <CarouselCard title="Ozzy" image={Carousel3} />
                 ),
               },
               {
                 key: 4,
                 content: (
-                    <CarouselCard title="Dolla and Fodera" image={Carousel4} />
+                    <CarouselCard title="Paranoid" image={Carousel4} />
                   ),
                 }
             ]}

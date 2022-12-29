@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
 import DeleteBtn from "./DeleteBtn.jsx"
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export default function ArtistDetails () {
     const navigate = useNavigate();
 
     const goToArtist=(x)=>{
-        navigate(`/artistDetails/${x.id}`)
+        navigate(`/artistRigDetails/${id}`)
     }
     
     const [artist, setartist] = useState('')
@@ -31,7 +31,7 @@ export default function ArtistDetails () {
         getData()
     }, [])
 
-
+    console.log(id)
 return !artist? null: (
     <div>
     <div className="artists-wrapper">
@@ -47,12 +47,17 @@ return !artist? null: (
                     <p><b>Website:</b> {artist.website}</p>
                    
             </div>
+            <div className="rig-buttons">
+                    <p>
+                        <button onClick={() => navigate(`/artistRigDetails/${id}`)}>Artist Rig Details</button>
+                    </p>
+            </div>        
 
-            <div className="crud-buttons">
+            {/* <div className="crud-buttons">
                         <DeleteBtn></DeleteBtn>{" "}
                         <Link to='/CreateArtist'><button class="crud">Create Artist</button></Link>
                        <Link to='/EditArtist'><button class="crud">Update Artist</button></Link>
-                        </div>   
+                        </div>    */}
                     
     </div>
     </div>

@@ -10,7 +10,7 @@ export default function ArtistRigDetails () {
     const navigate = useNavigate();
 
     const goToArtistRig=(x)=>{
-        navigate(`/rig-details/${x.id}`)
+        navigate(`/rigDesignDetails/${x.id}`)
     }
 
     // const [artist, setArtist] = useState('')
