@@ -83,7 +83,7 @@ export const UpdateArtist = () => {
       };
     
       const newArtist = () => {
-        setCurrentMenu(initialArtistState);
+        setCurrentArtist(initialArtistState);
         setSubmitted(false);
       };
     

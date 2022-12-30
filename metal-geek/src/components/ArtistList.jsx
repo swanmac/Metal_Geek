@@ -17,7 +17,7 @@ export const ArtistList = () => {
         },
       })
       .then((response) => {
-        setMenus(response.data);
+        setArtist(response.data);
         console.log(artist);
       })
       .catch((e) => {
@@ -44,7 +44,7 @@ export const ArtistList = () => {
 
   useEffect(() => {
     retrieveAllArtist();
-  }, [retrieveAllArtists]);
+  }, [retrieveAllArtist]);
 
   const handleUpdateClick = (id) => {
     navigate(`/artist/${id}/update/`);
