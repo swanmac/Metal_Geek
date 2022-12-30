@@ -1,6 +1,4 @@
 import { Route, Routes, Navigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
 import Home from './Home'
 import Artist from './Artist'
 import ArtistRig from './ArtistRig.jsx'
@@ -10,10 +8,13 @@ import RigDetails from './RigDetails.jsx'
 import RigDesignDetails from './RigDesignDetails.jsx'
 import CreateArtist from './CreateArtist.jsx'
 
+
 export default function Main () {
 
+    
 
     return (
+
         <div>
             <Routes>
                 <Route path = "/" element = {<Home home/>} />
@@ -29,5 +30,6 @@ export default function Main () {
 
             </Routes>
         </div>
+        
     )
 }
