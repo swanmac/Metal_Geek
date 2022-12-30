@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import DeleteBtn from "./DeleteBtn.jsx"
 import { Link } from "react-router-dom";
-import ArtistDetails from './ArtistDetails.jsx'
+
 
 
 export default function Artist () {
