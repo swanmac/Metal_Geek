@@ -9,7 +9,7 @@ export default function Nav () {
             <Link className="nav-events"to="/artist">Guitarists</Link>
             <Link className="nav-events"to="/artistRig">Guitar Rigs</Link>
             <Link className="nav-events"to="/rigDetails">Rig Details</Link>
-            {/* <Link to={"/add/"} className="nav-link"> Add an Artist</Link> */}
+            <Link to={"/add/"} className="nav-link"> Add an Artist</Link>
             </div>
         </div>
     )
