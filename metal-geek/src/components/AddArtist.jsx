@@ -30,7 +30,7 @@ export const AddArtist = () => {
     };
 
     axios
-      .post(`${baseURL}/artists/`, data, {
+      .post('http://localhost:8000/artists', data, {
         headers: {
           headers,
         },
