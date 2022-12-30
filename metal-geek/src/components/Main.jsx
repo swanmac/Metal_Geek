@@ -6,7 +6,7 @@ import ArtistDetails from './ArtistDetails.jsx'
 import ArtistRigDetails from './ArtistRigDetails'
 import RigDetails from './RigDetails.jsx'
 import RigDesignDetails from './RigDesignDetails.jsx'
-import CreateArtist from './CreateArtist.jsx'
+
 
 
 export default function Main () {
@@ -25,7 +25,7 @@ export default function Main () {
                 <Route path = "/artistRigDetails/:id" element ={<ArtistRigDetails/>}/>
                 <Route path = "/RigDetails" element = {<RigDetails />} />
                 <Route path = "/RigDesignDetails/:id" element = {<RigDesignDetails />} />
-                <Route path = "/CreateArtist" element = {<CreateArtist />} />
+                
                 
 
             </Routes>
