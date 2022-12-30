@@ -50,12 +50,8 @@ export default function Artist () {
 
                        
                         <br />
-                        {/* <div className="crud-buttons">
-                        <DeleteBtn></DeleteBtn>{" "}
-                        <Link to='/CreateArtist'><button class="crud">Create Artist</button></Link>
-                       <Link to='/EditArtist'><button class="crud">Update Artist</button></Link>
-                        </div>   
-                     */}
+                        
+                    
                     
                     </div>
                     
