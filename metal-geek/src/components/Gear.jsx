@@ -1,40 +1,40 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { baseURL, headers } from "./../services/artist.service";
+import { headers } from "../services/artist.service";
 import { useNavigate } from "react-router-dom";
 
-export const ArtistList = () => {
-  const [artist, setArtist] = useState([]);
+export const Gear = () => {
+  const [gear, setGear] = useState([]);
   const navigate = useNavigate();
 
   const [deleted, setDeleted] = useState(false);
 
-  const retrieveAllArtist = () => {
+  const retrieveAllGear = () => {
     axios
-      .get(`${baseURL}/artist/`, {
+      .get('http://localhost:8000/gears/', {
         headers: {
           headers,
         },
       })
       .then((response) => {
-        setArtist(response.data);
-        console.log(artist);
+        setGear(response.data);
+        console.log(gear);
       })
       .catch((e) => {
         console.error(e);
       });
   };
 
-  const deleteArtist = (id) => {
+  const deleteGear = (id) => {
     axios
-      .delete(`${baseURL}/artist/${id}/`, {
+      .delete('http://localhost:8000/gears/', {
         headers: {
           headers,
         },
       })
       .then((response) => {
         setDeleted(true);
-        retrieveAllArtist();
+        retrieveAllGear();
       })
       .catch((e) => {
         console.error(e);
@@ -43,11 +43,11 @@ export const ArtistList = () => {
 
 
   useEffect(() => {
-    retrieveAllArtist();
-  }, [retrieveAllArtist]);
+    retrieveAllGear();
+  }, [retrieveAllGear]);
 
   const handleUpdateClick = (id) => {
-    navigate(`/artist/${id}/update/`);
+    navigate(`/gears/${id}/update/`);
   };
   return (
     <div className="row justify-content-center">
@@ -57,7 +57,7 @@ export const ArtistList = () => {
             className="alert alert-danger alert-dismissible fade show"
             role="alert"
           >
-            Artist deleted!
+            Gear deleted!
             <button
               type="button"
               className="close"
@@ -69,15 +69,14 @@ export const ArtistList = () => {
           </div>
         )}
 
-        {artist &&
-          artist.map((artist) => (
-            <div key={artist.id} className="card my-3 w-25 mx-auto">
+        {gear &&
+          gear.map((gear) => (
+            <div key={gear.id} className="card my-3 w-25 mx-auto">
               <div className="card-body">
-                <h2 className="card-title font-weight-bold">{artist.name}</h2>
-                <h4 className="card-subtitle mb-2">{artist.band}</h4>
-                <p className="card-text">{artist.bio}</p>
-                <p className="card-text">{artist.website}</p>
-                <p className="card-text">{artist.photo_url}</p>
+                <h2 className="card-title font-weight-bold">{gear.name}</h2>
+                <h4 className="card-text">{gear.photo_url}</h4>
+                <p className="card-text">{gear.type}</p>
+                <p className="card-text">{gear.color}</p>
               </div>
               <div className="card-footer">
                 <div
@@ -87,7 +86,7 @@ export const ArtistList = () => {
                   <span>
                     <button
                       className="btn btn-info"
-                      onClick={() => handleUpdateClick(artist.id)}
+                      onClick={() => handleUpdateClick(gear.id)}
                     >
                       Update
                     </button>
@@ -95,7 +94,7 @@ export const ArtistList = () => {
                   <span>
                     <button
                       className="btn btn-danger"
-                      onClick={() => deleteArtist(artist.id)}
+                      onClick={() => deleteGear(gear.id)}
                     >
                       Delete
                     </button>
