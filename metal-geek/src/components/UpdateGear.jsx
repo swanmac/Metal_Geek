@@ -58,7 +58,7 @@ export const UpdateGear = () => {
         };
     
         axios
-          .put(`http://localhost:8000/gears-update/${id}/`, data, {
+          .put(`http://localhost:8000/gears-update/${id}`, data, {
             headers: {
               headers,
             },
@@ -114,7 +114,7 @@ export const UpdateGear = () => {
                   type="text"
                   className="form-control"
                   id="name"
-                  required
+                  // required
                   value={currentGear.name}
                   onChange={handleGearChange}
                   name="name"
@@ -156,7 +156,7 @@ export const UpdateGear = () => {
                   type="img"
                   className="form-control"
                   id="photo_url"
-                  required
+                  // required
                   value={currentGear.description}
                   onChange={handleGearChange}
                   name="photo_url"
