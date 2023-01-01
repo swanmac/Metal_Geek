@@ -74,7 +74,7 @@ export const Gear = () => {
             <div key={gear.id} className="card my-3 w-25 mx-auto">
               <div className="card-body">
                 <h2 className="card-title font-weight-bold">{gear.name}</h2>
-                <h4 className="card-text">{gear.photo_url}</h4>
+                <img src={gear.photo_url}></img>
                 <p className="card-text">{gear.type}</p>
                 <p className="card-text">{gear.color}</p>
               </div>
