@@ -1,10 +1,14 @@
 import axios from "axios";
+import { useParams } from "react-router-dom"
 import React, { useState } from "react";
 import { headers } from "../services/artist.service";
 
 export const AddGear = () => {
+
+  let { id } = useParams()
+
   const initialGearState = {
-    id: null,
+    // id: null,
     name: "",
     type: "",
     color: "",
@@ -28,7 +32,7 @@ export const AddGear = () => {
     };
 
     axios
-      .post('http://localhost:8000/gear', data, {
+      .post(`http://localhost:8000/gears-post`, data, {
         headers: {
           headers,
         },
@@ -113,7 +117,7 @@ export const AddGear = () => {
               required
               value={gear.color}
               onChange={handleGearChange}
-              name="gear"
+              name="color"
             />
           </div>
 
