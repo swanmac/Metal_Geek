@@ -1,47 +1,44 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { baseURL, headers } from "./../services/artist.service";
+import { headers } from "../services/artist.service";
 
-export const AddArtist = () => {
-  const initialArtistState = {
+export const AddGear = () => {
+  const initialGearState = {
     id: null,
     name: "",
-    band: "",
-    bio: "",
-    website: "",
+    type: "",
+    color: "",
     photo_url: "",
   };
 
-  const [artist, setArtist] = useState(initialArtistState);
+  const [gear, setGear] = useState(initialGearState);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleArtistChange = (e) => {
+  const handleGearChange = (e) => {
     const { name, value } = e.target;
-    setArtist({ ...artist, [name]: value });
+    setGear({ ...gear, [name]: value });
   };
 
-  const submitArtist = () => {
+  const submitGear = () => {
     let data = {
-      name: artist.name,
-      band: artist.band,
-      bio: artist.bio,
-      website: artist.website,
-      photo_url: artist.photo_url,
+      name: gear.name,
+      type: gear.type,
+      color: gear.color,
+      photo_url: gear.photo_url,
     };
 
     axios
-      .post('http://localhost:8000/artists', data, {
+      .post('http://localhost:8000/gear', data, {
         headers: {
           headers,
         },
       })
       .then((response) => {
-        setArtist({
+        setGear({
           id: response.data.id,
           name: response.data.name,
-          band: response.data.band,
-          bio: response.data.bio,
-          website: response.data.website,
+          type: response.data.type,
+          color: response.data.color,
           photo_url: response.data.photo_url,
         });
         setSubmitted(true);
@@ -52,8 +49,8 @@ export const AddArtist = () => {
       });
   };
 
-  const newArtist = () => {
-    setArtist(initialArtistState);
+  const newGear = () => {
+    setGear(initialGearState);
     setSubmitted(false);
   };
 
@@ -65,7 +62,7 @@ export const AddArtist = () => {
             className="alert alert-success alert-dismissible fade show"
             role="alert"
           >
-            Artist Added!
+            Gear Added!
             <button
               type="button"
               className="close"
@@ -75,7 +72,7 @@ export const AddArtist = () => {
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <button className="btn btn-success" onClick={newArtist}>
+          <button className="btn btn-success" onClick={newGear}>
             Add
           </button>
         </div>
@@ -88,67 +85,54 @@ export const AddArtist = () => {
               className="form-control"
               id="name"
               required
-              value={artist.name}
-              onChange={handleArtistChange}
+              value={gear.name}
+              onChange={handleGearChange}
               name="name"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="band">Band</label>
+            <label htmlFor="type">Type</label>
             <input
               type="text"
               className="form-control"
-              id="band"
+              id="type"
               required
-              value={artist.band}
-              onChange={handleArtistChange}
-              name="band"
+              value={gear.type}
+              onChange={handleGearChange}
+              name="type"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="bio">Bio</label>
+            <label htmlFor="color">Color</label>
             <input
               type="text"
               className="form-control"
-              id="bio"
+              id="color"
               required
-              value={artist.bio}
-              onChange={handleArtistChange}
-              name="bio"
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="website">Website</label>
-            <input
-              type="text"
-              className="form-control"
-              id="website"
-              required
-              value={artist.website}
-              onChange={handleArtistChange}
-              name="website"
+              value={gear.color}
+              onChange={handleGearChange}
+              name="gear"
             />
           </div>
 
           <div className="form-group">
             <label htmlFor="photo_url">Photo</label>
             <input
-              type="text"
+              type="img"
               className="form-control"
               id="photo_url"
               required
-              value={artist.photo_url}
-              onChange={handleArtistChange}
+              value={gear.photo_url}
+              onChange={handleGearChange}
               name="photo_url"
             />
           </div>
 
           <button
             type="submit"
-            onClick={submitArtist}
+            onClick={submitGear}
             className="btn btn-success mt-2"
           >
             Submit
