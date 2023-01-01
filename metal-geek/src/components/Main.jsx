@@ -6,9 +6,9 @@ import ArtistDetails from './ArtistDetails.jsx'
 import ArtistRigDetails from './ArtistRigDetails'
 import RigDetails from './RigDetails.jsx'
 import RigDesignDetails from './RigDesignDetails.jsx'
-import { AddArtist } from "./AddArtist.jsx"
+// import { AddArtist } from "./AddArtist.jsx"
 import { Gear } from "./Gear.jsx"
-import { UpdateArtist } from "./UpdateArtist.jsx"
+import { UpdateGear } from "./UpdateGear.jsx"
 
 
 
@@ -28,9 +28,12 @@ export default function Main () {
                 <Route path = "/RigDetails" element = {<RigDetails />} />
                 <Route path = "/RigDesignDetails/:id" element = {<RigDesignDetails />} />
                 <Route path = "/gear" element = {<Gear />} />
-                {/* <Route path="/add/" element={<AddArtist />} />
-                <Route path="/artist/:id/update/" element={<UpdateArtist />} /> */}
+                <Route path="/UpdateGear" element={<UpdateGear />} /> 
+
+                <Route path="/gear/:id/update/" element={<UpdateGear />} /> 
+
                 {/* <Route path = "/gear" element = {<Gear />} /> */}
+                 {/* /* <Route path="/add/" element={<AddArtist />} /> */}
                 
                 
 

@@ -1,77 +1,74 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { baseURL, headers } from "./../services/artist.service";
+import { headers } from "../services/artist.service";
 
-export const UpdateArtist = () => {
-    const initialArtistState = {
+
+export const UpdateGear = () => {
+    const initialGearState = {
         id: null,
         name: "",
-        band: "",
-        bio: "",
-        website: "",
+        type: "",
+        color: "",
         photo_url: "",
       };
 
       let { id } = useParams();
 
-      const [currentArtist, setCurrentArtist] = useState(initialArtistState);
+      const [currentGear, setCurrentGear] = useState(initialGearState);
       const [submitted, setSubmitted] = useState(false);
     
       useEffect(() => {
-        retrieveArtist();
+        retrieveGear();
       }, []);
     
-      const handleArtistChange = (e) => {
+      const handleGearChange = (e) => {
         const { name, value } = e.target;
-        setCurrentArtist({ ...currentArtist, [name]: value });
+        setCurrentGear({ ...currentGear, [name]: value });
       };
     
-      const retrieveArtist = () => {
+      const retrieveGear = () => {
         axios
-          .get(`${baseURL}/artist/${id}/`, {
+          .get('http://localhost:8000/gears/', {
             headers: {
               headers,
             },
           })
           .then((response) => {
-            setCurrentArtist({
+            setCurrentGear({
               id: response.data.id,
               name: response.data.name,
-              band: response.data.band,
-              bio: response.data.bio,
-              website: response.data.website,
+              type: response.data.type,
+              color: response.data.color,
               photo_url: response.data.photo_url,
             });
-            console.log(currentArtist);
+            // console.log(gears);
           })
           .catch((e) => {
             console.error(e);
           });
       };
     
-      const updateArtist = () => {
+      const updateGear = () => {
         let data = {
-          name: currentArtist.name,
-          band: currentArtist.band,
-          bio: currentArtist.bio,
-          website: currentArtist.website,
-          photo_url: currentArtist.photo_url,
+          name: currentGear.name,
+          type: currentGear.type,
+          color: currentGear.color,
+          photo_url: currentGear.photo_url,
         };
     
         axios
-          .put(`${baseURL}/artist/${id}/`, data, {
+          .put(`http://localhost:8000/gears-update/${id}/`, data, {
             headers: {
               headers,
             },
           })
           .then((response) => {
-            setCurrentArtist({
+            setCurrentGear({
               id: response.data.id,
               name: response.data.name,
-              band: response.data.band,
-              bio: response.data.bio,
-              website: response.data.website,
+              type: response.data.type,
+              color: response.data.color,
               photo_url: response.data.photo_url,
             });
             setSubmitted(true);
@@ -82,8 +79,8 @@ export const UpdateArtist = () => {
           });
       };
     
-      const newArtist = () => {
-        setCurrentArtist(initialArtistState);
+      const newGear = () => {
+        setCurrentGear(initialGearState);
         setSubmitted(false);
       };
     
@@ -95,7 +92,7 @@ export const UpdateArtist = () => {
                 className="alert alert-success alert-dismissible fade show"
                 role="alert"
               >
-                Artist Updated!
+                Gear Updated!
                 <button
                   type="button"
                   className="close"
@@ -105,7 +102,7 @@ export const UpdateArtist = () => {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <button className="btn btn-success" onClick={newArtist}>
+              <button className="btn btn-success" onClick={newGear}>
                 Update
               </button>
             </div>
@@ -118,69 +115,56 @@ export const UpdateArtist = () => {
                   className="form-control"
                   id="name"
                   required
-                  value={currentArtist.name}
-                  onChange={handleArtistChange}
+                  value={currentGear.name}
+                  onChange={handleGearChange}
                   name="name"
                 />
               </div>
     
               <div className="form-group">
-                <label htmlFor="band">Band</label>
+                <label htmlFor="type">Type</label>
                 <input
                   type="text"
                   className="form-control"
-                  id="band"
+                  id="type"
                   required
-                  value={currentArtist.description}
-                  onChange={handleArtistChange}
-                  name="band"
+                  value={currentGear.description}
+                  onChange={handleGearChange}
+                  name="type"
                   default
                 />
               </div>
     
               <div className="form-group">
-                <label htmlFor="bio">Bio</label>
+                <label htmlFor="color">Color</label>
                 <input
                   type="text"
                   className="form-control"
-                  id="bio"
+                  id="color"
                   required
-                  value={currentArtist.description}
-                  onChange={handleArtistChange}
-                  name="bio"
+                  value={currentGear.description}
+                  onChange={handleGearChange}
+                  name="color"
                   default
                 />
               </div>
 
-              <div className="form-group">
-                <label htmlFor="website">Website</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="website"
-                  required
-                  value={currentArtist.description}
-                  onChange={handleArtistChange}
-                  name="website"
-                  default
-                />
-              </div>
 
               <div className="form-group">
                 <label htmlFor="photo_url">Photo</label>
                 <input
-                  type="text"
+                  type="img"
                   className="form-control"
                   id="photo_url"
                   required
-                  value={currentArtist.description}
-                  onChange={handleArtistChange}
+                  value={currentGear.description}
+                  onChange={handleGearChange}
                   name="photo_url"
                   default
                 />
               </div>
     
-              <button onClick={updateArtist} className="btn btn-success">
+              <button onClick={updateGear} className="btn btn-success">
                 Submit
               </button>
             </div>
