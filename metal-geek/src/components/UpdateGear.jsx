@@ -107,7 +107,10 @@ export const UpdateGear = () => {
               </button>
             </div>
           ) : (
-            <div>
+            
+            
+              
+              <div>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
