@@ -33,14 +33,13 @@ export default function Gear () {
 
 
         return !gear? null: (
-        <div className="gear">
+        <div className="grid">
 
                     {gear.map((value) => {
                 return (
-                    <div className="gear-card" key={value.id} onClick={()=>goToGear(value)}>
+                    <div className="gear-grid" key={value.id} onClick={()=>goToGear(value)}>
                         <h2>{value.name}</h2>
                         <img src={value.photo_url} className="gear-photo"></img>
-                        <p>{value.type}</p>
                         <p><b>Type:</b> {value.type}</p>
                         <p><b>Color:</b> {value.color}</p>
 
