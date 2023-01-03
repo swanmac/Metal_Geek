@@ -167,7 +167,7 @@ export const UpdateGear = () => {
                 />
               </div>
     
-              <button onClick={updateGear} className="btn btn-success">
+              <button onClick={updateGear} className="btn-success">
                 Submit
               </button>
             </div>

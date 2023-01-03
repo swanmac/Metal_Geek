@@ -130,6 +130,7 @@ return !gear? null: (
                       Update
                     </button>
                   </span>
+                  
                   <span>
                     <button
                       className="btn-danger"

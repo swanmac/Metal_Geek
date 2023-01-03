@@ -58,9 +58,41 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height:20px;
+  height:50px;
   font-size: 20px;
   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.footer-container {
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.github {
+  background-color: green; /* Blue */
+  border: none;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.social {
+  background-color: green; /* Blue */
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-left: 5px;
 }
 
 
@@ -91,19 +123,57 @@
   border-radius: 12px;
 }
 
+.btn-info {
+  background-color: blue; /* Blue */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.btn-danger {
+  background-color: blue; /* Blue */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-left: 5px;
+}
+
+.btn-group {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn-success {
+  background-color: blue; /* Blue */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
 .card-container  {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
 
-.btn-info {
-  padding-right: 10px;
-}
-
-.btn-danger {
-  padding-left: 10px;
-}
 
 .App-link {
   color: #61dafb;

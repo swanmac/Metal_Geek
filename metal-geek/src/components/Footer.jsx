@@ -5,10 +5,11 @@ export default function Footer () {
             <p>© Metal Geek</p>
             </div>
             <div className="footer">
-            <p> <a href="https://github.com/swanmac" target=" _blank" rel="noopener noreferrer">GitHub</a></p>
+            <a href="https://github.com/swanmac" target=" _blank" className="github">Repository</a>
 
-            <p> <a href="https://www.linkedin.com/in/gregoryswan/" target=" _blank" rel="noopener noreferrer">Linkedin</a></p>
+            <div className="social"> <a href="https://www.linkedin.com/in/gregoryswan/" target=" _blank" className="social">LinkedIn</a>
         </div>
         </div>
+    </div>
     )
 }
