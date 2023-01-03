@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from 'react-router-dom'
+import '../App.css'
 
 export default function Gear () {
 
@@ -38,7 +39,7 @@ export default function Gear () {
                 return (
                     <div className="gear-card" key={value.id} onClick={()=>goToGear(value)}>
                         <h2>{value.name}</h2>
-                        <img src={value.photo_url}></img>
+                        <img src={value.photo_url} className="gear-photo"></img>
                         <p>{value.type}</p>
                         <p><b>Type:</b> {value.type}</p>
                         <p><b>Color:</b> {value.color}</p>

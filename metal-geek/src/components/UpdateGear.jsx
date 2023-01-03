@@ -19,7 +19,7 @@ export const UpdateGear = () => {
       const [submitted, setSubmitted] = useState(false);
     
       useEffect(() => {
-        retrieveGear();
+        getGear();
       }, []);
     
       const handleGearChange = (e) => {
@@ -27,7 +27,7 @@ export const UpdateGear = () => {
         setCurrentGear({ ...currentGear, [name]: value });
       };
     
-      const retrieveGear = () => {
+      const getGear = () => {
         axios
           .get('http://localhost:8000/gears/', {
             headers: {
@@ -58,7 +58,7 @@ export const UpdateGear = () => {
         };
     
         axios
-          .put(`http://localhost:8000/gears-update/${id}`, data, {
+          .put(`http://localhost:8000/gears/${id}`, data, {
             headers: {
               headers,
             },
@@ -117,7 +117,7 @@ export const UpdateGear = () => {
                   type="text"
                   className="form-control"
                   id="name"
-                  // required
+                  required
                   value={currentGear.name}
                   onChange={handleGearChange}
                   name="name"
@@ -131,7 +131,7 @@ export const UpdateGear = () => {
                   className="form-control"
                   id="type"
                   required
-                  value={currentGear.description}
+                  value={currentGear.type}
                   onChange={handleGearChange}
                   name="type"
                   default
@@ -145,7 +145,7 @@ export const UpdateGear = () => {
                   className="form-control"
                   id="color"
                   required
-                  value={currentGear.description}
+                  value={currentGear.color}
                   onChange={handleGearChange}
                   name="color"
                   default
@@ -159,8 +159,8 @@ export const UpdateGear = () => {
                   type="img"
                   className="form-control"
                   id="photo_url"
-                  // required
-                  value={currentGear.description}
+                  required
+                  value={currentGear.photo_url}
                   onChange={handleGearChange}
                   name="photo_url"
                   default

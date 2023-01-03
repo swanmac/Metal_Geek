@@ -10,6 +10,7 @@ import { AddGear } from "./AddGear.jsx"
 import Gear from './Gear.jsx'
 import GearDetails from './GearDetails.jsx'
 import { UpdateGear } from "./UpdateGear.jsx"
+import GearUpdate from './GearUpdate.jsx'
 
 
 
@@ -30,9 +31,11 @@ export default function Main () {
                 <Route path = "/RigDesignDetails/:id" element = {<RigDesignDetails />} />
                 <Route path = "/gear" element = {<Gear />} />
                 <Route path = "/gearDetails/:id" element = {<GearDetails gear/>} />
-                <Route path = "/UpdateGear" element={<UpdateGear />} /> 
+                <Route path = "/updateGear/:id" element={<UpdateGear />} /> 
+                <Route path = "/GearUpdate" element={<GearUpdate />} /> 
                 <Route path = "/add/" element={<AddGear />} />
                 {/* <Route path="/gear/:id/update/" element={<UpdateGear />} />  */}
+                {/* <Route path = "/gear/:id/delete/" element={<GearDelete />} />  */}
 
                 
                 

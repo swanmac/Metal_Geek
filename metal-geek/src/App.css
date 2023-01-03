@@ -35,7 +35,7 @@
 .nav-bar {
   height:20px;
   font-size: 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'RocknRoll+One', sans-serif;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -62,6 +62,13 @@
   font-size: 20px;
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
+
+.gear-photo {
+  width: 120px;
+  height: 170px;
+}
+
 
 .App-link {
   color: #61dafb;

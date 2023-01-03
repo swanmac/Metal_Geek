@@ -8,12 +8,14 @@ export const AddGear = () => {
   let { id } = useParams()
 
   const initialGearState = {
-    // id: null,
+    id: null,
     name: "",
     type: "",
     color: "",
     photo_url: "",
   };
+
+  
 
   const [gear, setGear] = useState(initialGearState);
   const [submitted, setSubmitted] = useState(false);
@@ -32,7 +34,7 @@ export const AddGear = () => {
     };
 
     axios
-      .post(`http://localhost:8000/gears-post`, data, {
+      .post('http://localhost:8000/gears-post/', data, {
         headers: {
           headers,
         },
