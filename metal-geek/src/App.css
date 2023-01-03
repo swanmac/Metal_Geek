@@ -79,6 +79,31 @@
   margin-bottom: 8em;
 }
 
+.rig-buttons {
+  background-color: blue; /* Blue */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+.card-container  {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.btn-info {
+  padding-right: 10px;
+}
+
+.btn-danger {
+  padding-left: 10px;
+}
 
 .App-link {
   color: #61dafb;

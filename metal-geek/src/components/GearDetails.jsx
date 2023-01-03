@@ -117,14 +117,14 @@ return !gear? null: (
                         <button onClick={() => navigate(`/artistRigDetails/${id}`)ar}>Artist Rig Details</button>
                     </p>
             </div>         */}
-        <div className="card-footer">
+        <div className="card-container">
                 <div
                   className="btn-group justify-content-around w-75 mb-1 "
                   data-toggle="buttons"
                 >
                   <span>
                     <button
-                      className="btn btn-info"
+                      className="btn-info"
                       onClick={() => handleUpdateClick(gear.id)}
                     >
                       Update
@@ -132,7 +132,7 @@ return !gear? null: (
                   </span>
                   <span>
                     <button
-                      className="btn btn-danger"
+                      className="btn-danger"
                       onClick={() => deleteGear(gear.id)}
                     >
                       Delete

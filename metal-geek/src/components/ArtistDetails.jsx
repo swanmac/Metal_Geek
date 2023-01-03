@@ -48,7 +48,7 @@ return !artist? null: (
             </div>
             <div className="rig-buttons">
                     <p>
-                        <button onClick={() => navigate(`/artistRigDetails/${id}`)}>Artist Rig Details</button>
+                        <button class="rig-buttons" onClick={() => navigate(`/artistRigDetails/${id}`)}>Artist Rig Details</button>
                     </p>
             </div>        
 
