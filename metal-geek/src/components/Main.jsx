@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom'
 import Home from './Home'
+import About from './About'
 import Artist from './Artist'
 import ArtistRig from './ArtistRig.jsx'
 import ArtistDetails from './ArtistDetails.jsx'
@@ -34,6 +35,7 @@ export default function Main () {
                 <Route path = "/updateGear/:id" element={<UpdateGear />} /> 
                 <Route path = "/GearUpdate" element={<GearUpdate />} /> 
                 <Route path = "/add/" element={<AddGear />} />
+                <Route exact path="about" element={<About/>}/>
                 {/* <Route path="/gear/:id/update/" element={<UpdateGear />} />  */}
                 {/* <Route path = "/gear/:id/delete/" element={<GearDelete />} />  */}
 

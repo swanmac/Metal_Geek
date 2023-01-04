@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios'
-import Artist from './Artist'
+import About from './About'
 import { useNavigate } from 'react-router-dom'
 import Carousel3d from "../example/Carousel3d";
 import CarouselCard from "../example/CarouselCard";
@@ -11,21 +11,22 @@ import Carousel3 from "../example/images/Carousel3.png";
 import Carousel4 from "../example/images/Carousel4.png";
 
 
-export default function Home (props) {
-  let navigate = useNavigate()
-    const showArtist = (artist) => {
-        navigate(`artist/${artist.id}`)
-    }
+export default function Home () {
 
-    const getData = async () => {
-      await axios.get('http://localhost:8000/artists')
-      .then(res => {
-          if (res) {
+  // let navigate = useNavigate()
+  //   const showArtist = (artist) => {
+  //       navigate(`artist/${artist.id}`)
+  //   }
+
+  //   const getData = async () => {
+  //     await axios.get('http://localhost:8000/artists')
+  //     .then(res => {
+  //         if (res) {
               
-              console.log(res.data)
-          }
-      })
-  }
+  //             console.log(res.data)
+  //         }
+  //     })
+  // }
     
   return (
     <div className="home-container">
@@ -66,23 +67,13 @@ export default function Home (props) {
             ]}
             offset={2}
           />
-        {/* </div>     
-      </div>
-      <div className="artists-container">
-            <h1 id="artist-group"> Top Guitarists </h1>
-          <div className="artists-wrapper">
-            {props.artists.map((artist) => {
-                  return (
-                    <div className="artist-grid" key={artist.id} onClick={() => showArtist (artist)}>
-                         <h3>{artist.name}</h3>
-                         <img src={artist.photo_url}></img>
-                         <p><b>Artist Bio:</b> {artist.bio}</p>
-                         <p><b>Bands:</b> {artist.band}</p>
-                         <p><b>Website:</b> {artist.website}</p>
-                        <br />
-                    </div> 
-                )
-            })} */}
+       
+          <span> 
+          <div className='about-home'>
+          <About />
+          </div> 
+          </span> 
+
           </div>
         </div>
     </div>
