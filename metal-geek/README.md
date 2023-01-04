@@ -52,6 +52,13 @@ The information for the database is being extracted and recreated from a now def
 
 Stretch goals for this project were accomplished by adding the musical instrument database model that is Full CRUD on the backend in Django and on the frontend in React.
 
+## Social Links
+- Github
+(https://github.com/swanmac)
+
+- LinkedIn
+(https://www.linkedin.com/in/gregoryswan/)
+
 ### Project Links
 
 - Components
@@ -73,6 +80,24 @@ Stretch goals for this project were accomplished by adding the musical instrumen
 
 ## Website
 <img src="public/a7.png" alt="Metal Geek">
+
+## Artist Website
+<img src="public/a8.png" alt="Artist">
+
+## Artist Rig Website
+<img src="public/a9.png" alt="Artist Rig">
+
+## Artist Rig Details Website
+<img src="public/a10.png" alt="Rig Details">
+
+## Gear Database Website
+<img src="public/a11.png" alt="Gear Database">
+
+## Gear CRUD Website
+<img src="public/a12.png" alt="Gear CRUD">
+
+## Gear Add/Update Form Website
+<img src="public/a13.png" alt="Add Form">
 
 ## Home
 <img src="public/a1.png" alt="Wireframe1">
