@@ -71,6 +71,9 @@ Stretch goals for this project were accomplished by adding the musical instrumen
 - Gear Database (https://wireframe.cc/GcHyvh)
 - Gear CRUD (https://wireframe.cc/D3GTeo)
 
+## Website
+<img src="public/a7.png" alt="Metal Geek">
+
 ## Home
 <img src="public/a1.png" alt="Wireframe1">
 
