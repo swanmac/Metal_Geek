@@ -24,6 +24,32 @@
   border-bottom: 3px solid #03054d;
 }
 
+.artist-card {
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.artist-details {
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.rig-details {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.artist-rig {
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.rig-design-details{
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+
 .header-container {
   display: flex;
   flex-direction: row;

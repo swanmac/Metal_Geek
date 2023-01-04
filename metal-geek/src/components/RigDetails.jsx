@@ -32,7 +32,7 @@ return !rigDetails? null: (
     <div className="rig-details-wrapper">
 
         {/* <div className="artist-rig-header"> */}      
-        <div className="rigDetails">
+        <div className="rig-details-top">
             {rigDetails.map((value) => {
                 return (
             <div className="rig-details" key={value.id} onClick={()=>goToRigDetails(value)}>
