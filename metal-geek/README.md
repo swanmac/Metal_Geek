@@ -42,7 +42,7 @@ The information for the database is being extracted and recreated from a now def
 ### Technology Not Used in Class
 
 - React-carousel-card-3d
-- Flowbite Tailwind
+- Flowbite Tailwind CSS
 
 ### Challenges
 
