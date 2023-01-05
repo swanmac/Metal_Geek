@@ -46,7 +46,7 @@ return !rigDetails? null: (
                     <h2><b>Guitarist:</b> {rigDetails.name}</h2>
                     <p><b>Rig Description:</b> {rigDetails.description}</p>
                     <p><b>Tuning:</b> {rigDetails.tuning}</p>             
-                    <img src={rigDetails.photo_url}></img>
+                    <img src={rigDetails.photo_url}className="rig-design-photo"></img>
             </div>
                 
              

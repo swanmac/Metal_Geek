@@ -40,7 +40,7 @@ return !artist? null: (
 
             <div className="artist-details" key={artist.id} onClick={()=>goToArtist(artist)}>
                     <h2>{artist.name}</h2>
-                    <img src={artist.photo_url}></img>
+                    <img src={artist.photo_url}className="artist-photo"></img>
                     <p><b>Artist Bio:</b> {artist.bio}</p>
                     <p><b>Bands:</b> {artist.band}</p>
                     <p><b>Website:</b> {artist.website}</p>

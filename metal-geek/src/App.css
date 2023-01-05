@@ -85,17 +85,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height:50px;
+    /* height:50px;
   font-size: 20px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif; */
 }
 
 .footer-container {
-  width: 100%;
+  /* width: 100%;
   position: center;
   height: 10em;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 2em; */
 }
 
 .github {
@@ -109,6 +109,7 @@
   font-size: 20px;
   border-radius: 12px;
   margin-right: 5px;
+  padding-bottom: 5px;
 }
 
 .social {
@@ -122,21 +123,39 @@
   font-size: 20px;
   border-radius: 12px;
   margin-left: 5px;
+  padding-bottom: 5px;
 }
 
+.home-container {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
 .gear-photo {
   width: 120px;
   height: 170px;
   text-align: center;
+  margin-left: 2rem;
 }
 
 .gear-photo-2 {
-  padding-left: 24rem;
+  padding-left: 28rem;
+}
+
+.artist-rig-photo {
+  margin-left: 5rem;
 }
 
 .rig-photo {
-  padding-left: 7rem;
+  padding-left: 15rem;
+}
+
+.rig-design-photo {
+  padding-left: 6rem;
+}
+
+.artist-photo {
+  padding-left: 5rem;
 }
 
 .grid {
@@ -236,7 +255,7 @@
   border: 2px solid hsl(0, 0%, 90%);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  
 }
 
 a:link {

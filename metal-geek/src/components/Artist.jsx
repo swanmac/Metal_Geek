@@ -40,7 +40,7 @@ export default function Artist () {
                 return (
                     <div className="artist-card" key={value.id} onClick={()=>goToArtist(value)}>
                         <h2>{value.name}</h2>
-                        <img src={value.photo_url}></img>
+                        <img src={value.photo_url}className="artist-photo"></img>
                         <p>{value.bio}</p>
                         <p><b>Bands:</b> {value.band}</p>
                         <p><b>Website:</b> {value.website}</p>

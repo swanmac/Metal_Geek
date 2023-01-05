@@ -45,7 +45,7 @@ return !artistRig? null: (
                     <p><b>Pedal 3:</b> {value.pedal3}</p>      
                     <p><b>Amplfier:</b> {value.amplifier}</p>
                     <p><b>Year of Rig:</b> {value.rig_year}</p>
-                    <img src={value.photo_url}></img>
+                    <img src={value.photo_url}className="artist-rig-photo"></img>
             </div>
                 )
              } )}

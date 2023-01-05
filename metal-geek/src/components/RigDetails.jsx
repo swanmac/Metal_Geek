@@ -41,7 +41,7 @@ return !rigDetails? null: (
                     <h2><b>Guitarist:</b> {value.name}</h2>             
                     <p><b>Rig Description:</b> {value.description}</p>
                     <p><b>Tuning:</b> {value.tuning}</p>
-                    <img src={value.photo_url}></img>
+                    <img src={value.photo_url}className="artist-rig-photo"></img>
             </div>
                 )
              } )}
