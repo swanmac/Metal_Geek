@@ -106,7 +106,7 @@ return !gear? null: (
 
             <div className="gear-details" key={gear.id} onClick={()=>goToGear(gear)}>
                     <h2>{gear.name}</h2>
-                    <img src={gear.photo_url}></img>
+                    <img src={gear.photo_url}className="gear-photo-2"></img>
                     <p><b>Type:</b> {gear.type}</p>
                     <p><b>Color:</b> {gear.color}
                     </p>

@@ -50,7 +50,7 @@ return !artistRig? null: (
                     <p><b>Pedal 3:</b> {artistRig.pedal3}</p>      
                     <p><b>Amplfier:</b> {artistRig.amplifier}</p>
                     <p><b>Year of Rig:</b> {artistRig.rig_year}</p>
-                    <img src={artistRig.photo_url}></img>
+                    <img src={artistRig.photo_url} className="rig-photo"></img>
             </div>
                 
              

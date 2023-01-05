@@ -46,6 +46,7 @@ return !artist? null: (
                     <p><b>Website:</b> {artist.website}</p>
                    
             </div>
+            <br />
             <div className="rig-buttons">
                     <p>
                         <button class="rig-buttons" onClick={() => navigate(`/artistRigDetails/${id}`)}>Artist Rig Details</button>

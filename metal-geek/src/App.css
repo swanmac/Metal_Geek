@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: center!important;
 }
 
 .App-logo {
@@ -128,6 +128,15 @@
 .gear-photo {
   width: 120px;
   height: 170px;
+  text-align: center;
+}
+
+.gear-photo-2 {
+  padding-left: 24rem;
+}
+
+.rig-photo {
+  padding-left: 7rem;
 }
 
 .grid {
@@ -138,6 +147,7 @@
   margin-left: 5em;
   margin-right: 5em;
   margin-bottom: 8em;
+  place-items: center;
 }
 
 .rig-buttons {
@@ -216,6 +226,17 @@
   margin-left: 25rem;
   margin-right: 25rem;
   margin-top: 2rem;
+}
+
+.form-control {
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 a:link {
