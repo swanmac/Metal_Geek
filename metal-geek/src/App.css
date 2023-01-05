@@ -91,10 +91,10 @@
 }
 
 .footer-container {
+  margin-top: -1em;
   /* width: 100%;
   position: center;
   height: 10em;
-  margin-top: 2em;
   margin-bottom: 2em; */
 }
 
@@ -126,9 +126,22 @@
   padding-bottom: 5px;
 }
 
+.repo {
+  background-color: green; /* Blue */
+  border: none;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
 .home-container {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: -3rem;
 }
 
 .gear-photo {
