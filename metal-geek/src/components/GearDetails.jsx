@@ -54,21 +54,7 @@ export default function GearDetails () {
 
     console.log(id)
 
-    // const retrieveAllGear = () => {
-    //     axios
-    //       .get(`http://localhost:8000/gears/`, {
-    //         headers: {
-    //           headers,
-    //         },
-    //       })
-    //       .then((response) => {
-    //         setGear(response.data);
-    //         console.log(gear);
-    //       })
-    //       .catch((e) => {
-    //         console.error(e);
-    //       });
-    //   };
+ 
 
     const deleteGear = (id) => {
         axios
@@ -86,9 +72,7 @@ export default function GearDetails () {
           });
       };
 
-    //   useEffect(() => {
-    //     retrieveAllGear();
-    //   }, [retrieveAllGear]);
+
     
       const handleUpdateClick = (id) => {
         navigate(`/updateGear/${id}`);
@@ -112,11 +96,7 @@ return !gear? null: (
                     </p>
                    
             </div>
-            {/* <div className="rig-buttons">
-                    <p>
-                        <button onClick={() => navigate(`/artistRigDetails/${id}`)ar}>Artist Rig Details</button>
-                    </p>
-            </div>         */}
+       
         <div className="card-container">
                 <div
                   className="btn-group justify-content-around w-75 mb-1 "
@@ -142,7 +122,7 @@ return !gear? null: (
                 </div>
                 </div>
             
-          {/* ))} */}
+         
 
 
     </div>
