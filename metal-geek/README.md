@@ -20,6 +20,23 @@ We started with three models, however we added one additional model "Gear" to ha
 
 The information for the database is being extracted and recreated from a now defuncted website through the use of an online tool that permits viewing of previous versions of websites.
 
+### Website Instructions
+- All operations begin in the navigation links at the top.
+- To Access the Guitarist click on the Guitarists link in the nav.
+- Once clicked you will be brought to the artist list.
+- Select an artist to view their general information: Bio, Bands, Website, and photo.
+- Select (or click on) that artist again and you will be brought to that artists rig details.
+- Rig details include: Guitarist name, Guitars, Pedals, Amplifiers, Year of the Rig, and Photo of the Rig.
+- Select (or click on) that Rig Details and you will be brought to the Rig Design Details.
+- Rig Design Details include: Rig Description: a detailed description of how the rig is laid out. Tuning: any special tuning, guitar pickup details, string details, etc...
+- Selecting the Rig Design Details again will bring you back to the Guitarists list to start over.
+- The Gear Database can be accessed by clicking the link at the top in the nav.
+- The Gear Database contains all of the instruments on a grid.
+- You can select any instrument in the grid and you will be taken to that specific item.
+- Once at that item you will have full CRUD on that item (Update or Delete)
+- The last link in the nav is an ADD Gear where you can Add a new Item to the gear database.
+- Clicking back to the Gear Database you can confirm that your CRUD eas performed correctly.
+
 ### Models
 
 - Artist
