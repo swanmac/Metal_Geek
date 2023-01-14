@@ -18,7 +18,7 @@ export default function Gear () {
 
  
     const getData = async () => {
-      await axios.get('http://localhost:8000/gears/') 
+      await axios.get('https://dry-peak-27830.herokuapp.com/gears/') 
         .then(res => {
           if (res) {
             setGear(res.data);

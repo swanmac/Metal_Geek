@@ -39,7 +39,7 @@ export default function GearDetails () {
 
 
     const getData = async () => {
-        await axios.get(`http://localhost:8000/gears/${id}`)
+        await axios.get(`https://dry-peak-27830.herokuapp.com/gears/${id}`)
         .then(res => {
             if (res) {
                 setGear(res.data)
@@ -58,7 +58,7 @@ export default function GearDetails () {
 
     const deleteGear = (id) => {
         axios
-          .delete(`http://localhost:8000/gears-delete/${id}`, {
+          .delete(`https://dry-peak-27830.herokuapp.com/gears-delete/${id}`, {
             headers: {
               headers,
             },

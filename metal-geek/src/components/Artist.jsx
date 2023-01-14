@@ -19,7 +19,7 @@ export default function Artist () {
     const [artists, setArtists] = useState([])
  
         const getData = async () => {
-        await axios.get('http://localhost:8000/artists')
+        await axios.get('https://dry-peak-27830.herokuapp.com/artists')
         .then(res => {
             if (res) {
                 setArtists(res.data)

@@ -10,7 +10,7 @@ export default function RigDetails () {
     const [rigDetails, setRigDetails] = useState([])
 
     const getData = async () => {
-        await axios.get(`http://localhost:8000/rig-detail`)
+        await axios.get(`https://dry-peak-27830.herokuapp.com/rig-detail`)
         .then(res => {
             if (res) {
                 setRigDetails(res.data)

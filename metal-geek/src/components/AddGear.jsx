@@ -34,7 +34,7 @@ export const AddGear = () => {
     };
 
     axios
-      .post('http://localhost:8000/gears-post/', data, {
+      .post('https://dry-peak-27830.herokuapp.com/gears-post/', data, {
         headers: {
           headers,
         },

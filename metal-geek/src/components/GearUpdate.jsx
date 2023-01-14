@@ -22,7 +22,7 @@ const GearUpdate = ({ gear, id, name, }) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await axios
-      .put(`http://localhost:8000/gears/${id}`, formValues)
+      .put(`https://dry-peak-27830.herokuapp.com/gears/${id}`, formValues)
 
       .then((response) => {
         // navigate("/products")

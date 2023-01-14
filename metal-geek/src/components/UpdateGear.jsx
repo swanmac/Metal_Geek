@@ -29,7 +29,7 @@ export const UpdateGear = () => {
     
       const getGear = () => {
         axios
-          .get('http://localhost:8000/gears/', {
+          .get('https://dry-peak-27830.herokuapp.com/gears/', {
             headers: {
               headers,
             },
@@ -58,7 +58,7 @@ export const UpdateGear = () => {
         };
     
         axios
-          .put(`http://localhost:8000/gears/${id}`, data, {
+          .put(`https://dry-peak-27830.herokuapp.com/gears/${id}`, data, {
             headers: {
               headers,
             },

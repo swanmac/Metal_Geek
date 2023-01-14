@@ -10,7 +10,7 @@ export default function ArtistRig () {
     const [artistRig, setArtistRig] = useState([])
 
     const getData = async () => {
-        await axios.get(`http://localhost:8000/artist-rig`)
+        await axios.get(`https://dry-peak-27830.herokuapp.com/artist-rig`)
         .then(res => {
             if (res) {
                 setArtistRig(res.data)
