@@ -18,7 +18,7 @@ export default function Nav () {
             <Link className="nav-events"to="/artistRig">Guitar Rigs</Link>
             <Link className="nav-events"to="/rigDetails">Rig Details</Link>
             <Link className="nav-events"to="/gear">Gear Database</Link>
-            <Link to={"/add/"} className="nav-events"> Add Gear</Link>
+            <Link className="nav-events"to="/add/">Add Gear</Link>
             </div>
         </div>
     )
