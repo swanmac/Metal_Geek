@@ -37,9 +37,9 @@ export default function Gear () {
 
                     {gear.map((value) => {
                 return (
-                    <div className="gear-grid" key={value.id} onClick={()=>goToGear(value)}>
+                    <div className="gear-grid mx-auto" key={value.id} onClick={()=>goToGear(value)}>
                         <h2>{value.name}</h2>
-                        <img src={value.photo_url} className="gear-photo"></img>
+                        <img src={value.photo_url} className="mx-auto flex items-center"></img>
                         <p><b>Type:</b> {value.type}</p>
                         <p><b>Color:</b> {value.color}</p>
 

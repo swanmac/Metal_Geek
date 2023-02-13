@@ -9,7 +9,7 @@ export default function About () {
         <p>
         This website was designed to allow all new and seasoned guitarists to learn about the actual guitar rigs that their favorite guitarists are using, from guitars and pickups, to effect pedals and amplifiers.</p>
         <p>
-        We even go into detail about the configuration setup that is involved as well as any special guitar string tuning.</p>
+        We even go into detail about the configuration rig setup that is involved as well as any special guitar string tuning.</p>
         <p>
         In addition with have included an instrument gear database that is full CRUD (Create, Read, Update, Delete)</p> 
         <p>

@@ -36,15 +36,16 @@ export default function Artist () {
 
         return !artists? null: (
         <div className="artists">
+            
             {artists.map((value) => {
                 return (
-                    <div className="artist-card" key={value.id} onClick={()=>goToArtist(value)}>
+                    <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={value.id} onClick={()=>goToArtist(value)}>
                         <h2>{value.name}</h2>
-                        <img src={value.photo_url}className="artist-photo"></img>
+                        <img className='mx-auto flex items-center' src={value.photo_url}></img>
                         <p>{value.bio}</p>
                         <p><b>Bands:</b> {value.band}</p>
                         <p><b>Website:</b> {value.website}</p>
-
+                        
                         <br />
                         
 

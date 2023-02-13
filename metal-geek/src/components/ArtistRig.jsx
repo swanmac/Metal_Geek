@@ -35,7 +35,7 @@ return !artistRig? null: (
         <div className="artistRig">
             {artistRig.map((value) => {
                 return (
-            <div className="artist-rig" key={value.id} onClick={()=>goToArtistRig(value)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={value.id} onClick={()=>goToArtistRig(value)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
                     <h2><b>Guitarist Name:</b> {value.name}</h2>
@@ -45,7 +45,7 @@ return !artistRig? null: (
                     <p><b>Pedal 3:</b> {value.pedal3}</p>      
                     <p><b>Amplfier:</b> {value.amplifier}</p>
                     <p><b>Year of Rig:</b> {value.rig_year}</p>
-                    <img src={value.photo_url}className="artist-rig-photo"></img>
+                    <img src={value.photo_url}className="mx-auto flex items-center"></img>
             </div>
                 )
              } )}

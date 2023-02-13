@@ -35,13 +35,13 @@ return !rigDetails? null: (
         <div className="rig-details-top">
             {rigDetails.map((value) => {
                 return (
-            <div className="rig-details" key={value.id} onClick={()=>goToRigDetails(value)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={value.id} onClick={()=>goToRigDetails(value)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
                     <h2><b>Guitarist:</b> {value.name}</h2>             
                     <p><b>Rig Description:</b> {value.description}</p>
                     <p><b>Tuning:</b> {value.tuning}</p>
-                    <img src={value.photo_url}className="artist-rig-photo"></img>
+                    <img src={value.photo_url}className="mx-auto flex items-center"></img>
             </div>
                 )
              } )}

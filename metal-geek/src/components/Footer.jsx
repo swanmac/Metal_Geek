@@ -1,6 +1,6 @@
 export default function Footer () {
     return (
-        <div className="w-full mt-40 bg-zinc-400 py-y px-2">
+        <div className="w-full mt-40 bg-zinc-400 py-y px-2 h-screen-max-10">
         <div className="footer-container">
             
             <br />

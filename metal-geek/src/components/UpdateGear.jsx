@@ -110,7 +110,7 @@ export const UpdateGear = () => {
             
             
               
-              <div>
+              <div className='mx-auto flex flex-col items-center'>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input

@@ -40,7 +40,7 @@ return !artistRig? null: (
     <div className="artists-rig-header">
         </div>
             
-            <div className="artist-rig-details" key={artistRig.id} onClick={()=>goToArtistRig(artistRig)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={artistRig.id} onClick={()=>goToArtistRig(artistRig)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
                     <h2><b>Guitarist Name:</b> {artistRig.name}</h2>
@@ -50,7 +50,7 @@ return !artistRig? null: (
                     <p><b>Pedal 3:</b> {artistRig.pedal3}</p>      
                     <p><b>Amplfier:</b> {artistRig.amplifier}</p>
                     <p><b>Year of Rig:</b> {artistRig.rig_year}</p>
-                    <img src={artistRig.photo_url} className="rig-photo"></img>
+                    <img src={artistRig.photo_url} className="mx-auto flex items-center"></img>
             </div>
                 
              

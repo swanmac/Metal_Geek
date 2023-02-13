@@ -88,9 +88,9 @@ return !gear? null: (
         <div className="gears-header">
         </div>
 
-            <div className="gear-details" key={gear.id} onClick={()=>goToGear(gear)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={gear.id} onClick={()=>goToGear(gear)}>
                     <h2>{gear.name}</h2>
-                    <img src={gear.photo_url}className="gear-photo-2"></img>
+                    <img src={gear.photo_url}className="mx-auto flex items-center"></img>
                     <p><b>Type:</b> {gear.type}</p>
                     <p><b>Color:</b> {gear.color}
                     </p>

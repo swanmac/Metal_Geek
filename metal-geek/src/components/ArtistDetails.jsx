@@ -38,9 +38,9 @@ return !artist? null: (
         <div className="artists-header">
         </div>
 
-            <div className="artist-details" key={artist.id} onClick={()=>goToArtist(artist)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={artist.id} onClick={()=>goToArtist(artist)}>
                     <h2>{artist.name}</h2>
-                    <img src={artist.photo_url}className="artist-photo"></img>
+                    <img src={artist.photo_url}className="md:max-w-md mx-auto"></img>
                     <p><b>Artist Bio:</b> {artist.bio}</p>
                     <p><b>Bands:</b> {artist.band}</p>
                     <p><b>Website:</b> {artist.website}</p>

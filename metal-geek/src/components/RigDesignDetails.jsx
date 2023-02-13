@@ -40,13 +40,13 @@ return !rigDetails? null: (
     <div className="rig-design-header">
         </div>
             
-            <div className="rig-design-details" key={rigDetails.id} onClick={()=>goToRigDesignDetails(rigDetails)}>
+            <div className="md:text-xl max-w-md mx-auto pb-5 pt-10" key={rigDetails.id} onClick={()=>goToRigDesignDetails(rigDetails)}>
                 {/* <h2>{artist.name}</h2> */}
                     {/* <p>{artist.description}</p> */}
                     <h2><b>Guitarist:</b> {rigDetails.name}</h2>
                     <p><b>Rig Description:</b> {rigDetails.description}</p>
                     <p><b>Tuning:</b> {rigDetails.tuning}</p>             
-                    <img src={rigDetails.photo_url}className="rig-design-photo"></img>
+                    <img src={rigDetails.photo_url}className="mx-auto flex items-center"></img>
             </div>
                 
              

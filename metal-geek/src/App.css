@@ -24,10 +24,10 @@
   border-bottom: 3px solid #03054d;
 }
 
-.artist-card {
+/* .artist-card {
   margin-left: 20em;
   margin-right: 20em;
-}
+} */
 
 .artist-details {
   margin-left: 20em;
@@ -50,28 +50,28 @@
 }
 
 
-.header-container {
+/* .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
   align-content: space-around;
-}
+} */
 
-.nav-bar {
+/* .nav-bar {
   height:20px;
   font-size: 20px;
   font-family: 'RocknRoll+One', sans-serif;
   align-items: center;
   margin-bottom: 15px;
-}
+} */
 
-.nav-home, .nav-events {
+/* .nav-home, .nav-events {
   color: white;
   margin-right: 10px;
   padding-right: 70px;
   text-decoration: none;
-}
+} */
 
 .crud-buttons {
   display: flex;
@@ -92,10 +92,10 @@
 
 .footer-container {
   margin-top: -1em;
-  /* width: 100%;
+  width: 100%;
   position: center;
   height: 10em;
-  margin-bottom: 2em; */
+  margin-bottom: 2em;
 }
 
 .github {
@@ -167,13 +167,13 @@
   padding-left: 6rem;
 }
 
-.artist-photo {
+/* .artist-photo {
   padding-left: 5rem;
-}
+} */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-gap: 5em;
   margin-top: 5em;
   margin-left: 5em;

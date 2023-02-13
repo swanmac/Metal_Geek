@@ -83,7 +83,8 @@ export const AddGear = () => {
           </button>
         </div>
       ) : (
-        <div>
+
+        <div className='mx-auto flex flex-col items-center max-w-sm'>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
