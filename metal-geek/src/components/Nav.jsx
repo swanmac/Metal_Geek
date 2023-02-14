@@ -37,8 +37,8 @@ export default function Nav () {
             <Link className="nav-events"to="/rigDetails">Rig Details</Link></l1>
                 <l1 className='lg:px-5 py-2 block'>
             <Link className="nav-events"to="/gear">Gear Database</Link></l1>
-                {/* <l1 className='lg:px-5 py-2 block'>
-            <Link className="nav-events"to="/add/">Add Gear</Link></l1> */}
+                <l1 className='lg:px-5 py-2 block'>
+            <Link className="nav-events"to="/add/">Add Gear</Link></l1>
             </ul>
             </div>
             </nav>

@@ -112,7 +112,7 @@ export const UpdateGear = () => {
               
               <div className='mx-auto flex flex-col items-center'>
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name"></label>
                 <input
                   type="text"
                   className="form-control"
@@ -121,11 +121,12 @@ export const UpdateGear = () => {
                   value={currentGear.name}
                   onChange={handleGearChange}
                   name="name"
+                  placeholder="Name"
                 />
               </div>
     
               <div className="form-group">
-                <label htmlFor="type">Type</label>
+                <label htmlFor="type"></label>
                 <input
                   type="text"
                   className="form-control"
@@ -134,12 +135,13 @@ export const UpdateGear = () => {
                   value={currentGear.type}
                   onChange={handleGearChange}
                   name="type"
+                  placeholder="Type"
                   default
                 />
               </div>
     
               <div className="form-group">
-                <label htmlFor="color">Color</label>
+                <label htmlFor="color"></label>
                 <input
                   type="text"
                   className="form-control"
@@ -148,13 +150,14 @@ export const UpdateGear = () => {
                   value={currentGear.color}
                   onChange={handleGearChange}
                   name="color"
+                  placeholder="Color"
                   default
                 />
               </div>
 
 
               <div className="form-group">
-                <label htmlFor="photo_url">Photo</label>
+                <label htmlFor="photo_url"></label>
                 <input
                   type="img"
                   className="form-control"
@@ -163,6 +166,7 @@ export const UpdateGear = () => {
                   value={currentGear.photo_url}
                   onChange={handleGearChange}
                   name="photo_url"
+                  placeholder="Photo"
                   default
                 />
               </div>

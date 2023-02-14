@@ -13,7 +13,7 @@ export default function About () {
         <p>
         In addition with have included an instrument gear database that is full CRUD (Create, Read, Update, Delete)</p> 
         <p>
-        To get started, click on the navigation links above...</p>    
+        To get started, click on the navigation links above.</p>    
     </div>
 </div>
 </about>

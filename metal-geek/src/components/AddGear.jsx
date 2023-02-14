@@ -85,8 +85,9 @@ export const AddGear = () => {
       ) : (
 
         <div className='mx-auto flex flex-col items-center max-w-sm'>
+         
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name"></label>
             <input
               type="text"
               className="form-control"
@@ -95,11 +96,12 @@ export const AddGear = () => {
               value={gear.name}
               onChange={handleGearChange}
               name="name"
+              placeholder="Name"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="type">Type</label>
+            <label htmlFor="type"></label>
             <input
               type="text"
               className="form-control"
@@ -108,11 +110,12 @@ export const AddGear = () => {
               value={gear.type}
               onChange={handleGearChange}
               name="type"
+              placeholder="Type"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="color">Color</label>
+            <label htmlFor="color"></label>
             <input
               type="text"
               className="form-control"
@@ -121,11 +124,12 @@ export const AddGear = () => {
               value={gear.color}
               onChange={handleGearChange}
               name="color"
+              placeholder="Color"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="photo_url">Photo</label>
+            <label htmlFor="photo_url"></label>
             <input
               type="img"
               className="form-control"
@@ -134,6 +138,7 @@ export const AddGear = () => {
               value={gear.photo_url}
               onChange={handleGearChange}
               name="photo_url"
+              placeholder="Photo"
             />
           </div>
 
